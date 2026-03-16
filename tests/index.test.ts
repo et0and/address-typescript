@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'address/core/api-promise';
+import { APIPromise } from 'address-sdk/core/api-promise';
 
 import util from 'node:util';
-import Address from 'address';
-import { APIUserAbortError } from 'address';
+import Address from 'address-sdk';
+import { APIUserAbortError } from 'address-sdk';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "address/*": ["./src/*"],
-      "address": ["./src/index.ts"]
+      "address-sdk/*": ["./src/*"],
+      "address-sdk": ["./src/index.ts"]
     },
     "noEmit": true,
 
