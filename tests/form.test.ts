@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'address/internal/uploads';
-import { toFile } from 'address/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'address-sdk/internal/uploads';
+import { toFile } from 'address-sdk/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

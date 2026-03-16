@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Address from 'address';
+import Address from 'address-sdk';
 
 const client = new Address({
   apiKey: 'My API Key',
