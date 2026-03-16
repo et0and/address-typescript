@@ -1,0 +1,14 @@
+# Changelog
+
+## 0.1.0 (2026-03-16)
+
+Full Changelog: [v0.0.1...v0.1.0](https://github.com/et0and/address-typescript/compare/v0.0.1...v0.1.0)
+
+### Features
+
+* **api:** manual updates ([eb762bc](https://github.com/et0and/address-typescript/commit/eb762bc8d459207f1140c44959ea0d2d5123dfb8))
+
+
+### Chores
+
+* update SDK settings ([7538a5f](https://github.com/et0and/address-typescript/commit/7538a5f93ede4acb68e9c8736ce53ba770b744da))
