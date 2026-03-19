@@ -43,10 +43,6 @@ export namespace ReverseGeocodeResponse {
 
     longitude: number;
 
-    postcode: string;
-
-    region: string;
-
     suburb: string;
 
     territorialAuthority: string;
@@ -54,6 +50,10 @@ export namespace ReverseGeocodeResponse {
     townCity: string;
 
     fullAddressRoad?: string | null;
+
+    postcode?: string | null;
+
+    region?: string | null;
   }
 }
 
