@@ -49,10 +49,6 @@ export namespace SearchQueryResponse {
 
     longitude: number;
 
-    postcode: string;
-
-    region: string;
-
     suburb: string;
 
     territorialAuthority: string;
@@ -60,6 +56,10 @@ export namespace SearchQueryResponse {
     townCity: string;
 
     fullAddressRoad?: string | null;
+
+    postcode?: string | null;
+
+    region?: string | null;
   }
 }
 

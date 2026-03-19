@@ -64,10 +64,6 @@ export interface AddressRetrieveResponse {
 
   longitude: number;
 
-  postcode: string;
-
-  region: string;
-
   suburb: string;
 
   territorialAuthority: string;
@@ -75,6 +71,10 @@ export interface AddressRetrieveResponse {
   townCity: string;
 
   fullAddressRoad?: string | null;
+
+  postcode?: string | null;
+
+  region?: string | null;
 }
 
 export type AddressListResponse = Array<AddressListResponse.AddressListResponseItem>;
@@ -91,10 +91,6 @@ export namespace AddressListResponse {
 
     longitude: number;
 
-    postcode: string;
-
-    region: string;
-
     suburb: string;
 
     territorialAuthority: string;
@@ -102,6 +98,10 @@ export namespace AddressListResponse {
     townCity: string;
 
     fullAddressRoad?: string | null;
+
+    postcode?: string | null;
+
+    region?: string | null;
   }
 }
 
