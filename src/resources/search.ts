@@ -45,8 +45,6 @@ export namespace SearchQueryResponse {
 
     fullAddressNumber: string;
 
-    fullAddressRoad: string;
-
     latitude: number;
 
     longitude: number;
@@ -60,6 +58,8 @@ export namespace SearchQueryResponse {
     territorialAuthority: string;
 
     townCity: string;
+
+    fullAddressRoad?: string | null;
   }
 }
 

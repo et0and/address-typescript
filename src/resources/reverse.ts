@@ -39,8 +39,6 @@ export namespace ReverseGeocodeResponse {
 
     fullAddressNumber: string;
 
-    fullAddressRoad: string;
-
     latitude: number;
 
     longitude: number;
@@ -54,6 +52,8 @@ export namespace ReverseGeocodeResponse {
     territorialAuthority: string;
 
     townCity: string;
+
+    fullAddressRoad?: string | null;
   }
 }
 

@@ -60,8 +60,6 @@ export interface AddressRetrieveResponse {
 
   fullAddressNumber: string;
 
-  fullAddressRoad: string;
-
   latitude: number;
 
   longitude: number;
@@ -75,6 +73,8 @@ export interface AddressRetrieveResponse {
   territorialAuthority: string;
 
   townCity: string;
+
+  fullAddressRoad?: string | null;
 }
 
 export type AddressListResponse = Array<AddressListResponse.AddressListResponseItem>;
@@ -86,8 +86,6 @@ export namespace AddressListResponse {
     fullAddress: string;
 
     fullAddressNumber: string;
-
-    fullAddressRoad: string;
 
     latitude: number;
 
@@ -102,6 +100,8 @@ export namespace AddressListResponse {
     territorialAuthority: string;
 
     townCity: string;
+
+    fullAddressRoad?: string | null;
   }
 }
 
