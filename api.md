@@ -1,13 +1,5 @@
 # Address
 
-Types:
-
-- <code><a href="./src/resources/top-level.ts">GetAPIInfoResponse</a></code>
-
-Methods:
-
-- <code title="get /">client.<a href="./src/index.ts">getAPIInfo</a>() -> GetAPIInfoResponse</code>
-
 # Health
 
 Types:

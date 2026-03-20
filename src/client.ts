@@ -16,8 +16,6 @@ import { VERSION } from './version';
 import * as Errors from './core/error';
 import * as Uploads from './core/uploads';
 import * as API from './resources/index';
-import * as TopLevelAPI from './resources/top-level';
-import { GetAPIInfoResponse } from './resources/top-level';
 import { APIPromise } from './core/api-promise';
 import {
   AddressListParams,
@@ -210,14 +208,6 @@ export class Address {
    */
   #baseURLOverridden(): boolean {
     return this.baseURL !== 'https://address.tom.so';
-  }
-
-  /**
-   * Returns basic API information including available endpoints and version details.
-   * This is the entry point for discovering the API capabilities.
-   */
-  getAPIInfo(options?: RequestOptions): APIPromise<TopLevelAPI.GetAPIInfoResponse> {
-    return this.get('/', { ...options, __security: {} });
   }
 
   protected defaultQuery(): Record<string, string | undefined> | undefined {
@@ -747,15 +737,15 @@ export class Address {
   static toFile = Uploads.toFile;
 
   /**
-   * Health, API information, and API key onboarding endpoints that do not require authentication.
+   * Health and API key onboarding endpoints that do not require authentication.
    */
   health: API.Health = new API.Health(this);
   /**
-   * Health, API information, and API key onboarding endpoints that do not require authentication.
+   * Health and API key onboarding endpoints that do not require authentication.
    */
   challenge: API.Challenge = new API.Challenge(this);
   /**
-   * Health, API information, and API key onboarding endpoints that do not require authentication.
+   * Health and API key onboarding endpoints that do not require authentication.
    */
   requestKey: API.RequestKey = new API.RequestKey(this);
   /**
@@ -786,8 +776,6 @@ Address.Meta = Meta;
 
 export declare namespace Address {
   export type RequestOptions = Opts.RequestOptions;
-
-  export { type GetAPIInfoResponse as GetAPIInfoResponse };
 
   export { Health as Health, type HealthCheckResponse as HealthCheckResponse };
 
