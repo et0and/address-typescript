@@ -35,7 +35,7 @@ export class Search extends APIResource {
   }
 }
 
-export type SearchQueryResponse = Array<SearchQueryResponse.SearchQueryResponseItem>;
+export type SearchQueryResponse = Array<SearchQueryResponse.SearchQueryResponseItem>
 
 export namespace SearchQueryResponse {
   export interface SearchQueryResponseItem {
@@ -76,5 +76,8 @@ export interface SearchQueryParams {
 }
 
 export declare namespace Search {
-  export { type SearchQueryResponse as SearchQueryResponse, type SearchQueryParams as SearchQueryParams };
+  export {
+    type SearchQueryResponse as SearchQueryResponse,
+    type SearchQueryParams as SearchQueryParams
+  };
 }
