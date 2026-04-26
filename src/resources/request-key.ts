@@ -14,7 +14,7 @@ export class RequestKey extends APIResource {
    * This prevents automated abuse while allowing legitimate users to access the API.
    */
   create(body: RequestKeyCreateParams, options?: RequestOptions): APIPromise<RequestKeyCreateResponse> {
-    return this._client.post('/request-key', { body, ...options, __security: {} });
+    return this._client.post('/request-key', { body, ...options, __security: {  } });
   }
 }
 
@@ -35,6 +35,6 @@ export interface RequestKeyCreateParams {
 export declare namespace RequestKey {
   export {
     type RequestKeyCreateResponse as RequestKeyCreateResponse,
-    type RequestKeyCreateParams as RequestKeyCreateParams,
+    type RequestKeyCreateParams as RequestKeyCreateParams
   };
 }

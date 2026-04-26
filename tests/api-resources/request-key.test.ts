@@ -2,19 +2,16 @@
 
 import Address from 'address-sdk';
 
-const client = new Address({
-  apiKey: 'My API Key',
-  baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
-});
+const client = new Address({ apiKey: 'My API Key', baseURL: process.env["TEST_API_BASE_URL"] ?? 'http://127.0.0.1:4010' });
 
 describe('resource requestKey', () => {
   // Mock server tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.requestKey.create({
-      token: 'token',
-      challenge: 'challenge',
-      nonce: 0,
-    });
+    token: 'token',
+    challenge: 'challenge',
+    nonce: 0,
+  });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -27,9 +24,9 @@ describe('resource requestKey', () => {
   // Mock server tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.requestKey.create({
-      token: 'token',
-      challenge: 'challenge',
-      nonce: 0,
-    });
+    token: 'token',
+    challenge: 'challenge',
+    nonce: 0,
+  });
   });
 });
