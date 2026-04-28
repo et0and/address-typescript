@@ -2,7 +2,10 @@
 
 import Address from 'address-sdk';
 
-const client = new Address({ apiKey: 'My API Key', baseURL: process.env["TEST_API_BASE_URL"] ?? 'http://127.0.0.1:4010' });
+const client = new Address({
+  apiKey: 'My API Key',
+  baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
+});
 
 describe('resource reverse', () => {
   // Mock server tests are disabled
@@ -20,9 +23,9 @@ describe('resource reverse', () => {
   // Mock server tests are disabled
   test.skip('geocode: required and optional params', async () => {
     const response = await client.reverse.geocode({
-    point: 'point',
-    format: 'format',
-    limit: 'limit',
-  });
+      point: 'point',
+      format: 'format',
+      limit: 'limit',
+    });
   });
 });

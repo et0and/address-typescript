@@ -15,7 +15,7 @@ export class Challenge extends APIResource {
    * challenge with the POST /request-key endpoint to obtain an API key.
    */
   retrieve(options?: RequestOptions): APIPromise<ChallengeRetrieveResponse> {
-    return this._client.get('/challenge', { ...options, __security: {  } });
+    return this._client.get('/challenge', { ...options, __security: {} });
   }
 }
 
@@ -30,7 +30,5 @@ export interface ChallengeRetrieveResponse {
 }
 
 export declare namespace Challenge {
-  export {
-    type ChallengeRetrieveResponse as ChallengeRetrieveResponse
-  };
+  export { type ChallengeRetrieveResponse as ChallengeRetrieveResponse };
 }

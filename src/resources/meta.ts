@@ -33,7 +33,5 @@ export interface MetaRetrieveResponse {
 }
 
 export declare namespace Meta {
-  export {
-    type MetaRetrieveResponse as MetaRetrieveResponse
-  };
+  export { type MetaRetrieveResponse as MetaRetrieveResponse };
 }

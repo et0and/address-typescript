@@ -14,7 +14,7 @@ export class Health extends APIResource {
    * health checks.
    */
   check(options?: RequestOptions): APIPromise<HealthCheckResponse> {
-    return this._client.get('/health', { ...options, __security: {  } });
+    return this._client.get('/health', { ...options, __security: {} });
   }
 }
 
@@ -25,7 +25,5 @@ export interface HealthCheckResponse {
 }
 
 export declare namespace Health {
-  export {
-    type HealthCheckResponse as HealthCheckResponse
-  };
+  export { type HealthCheckResponse as HealthCheckResponse };
 }

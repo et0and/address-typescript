@@ -45,7 +45,10 @@ export class Addresses extends APIResource {
    *
    * **Example:** `/v1/addresses?town_city=Wellington&limit=50`
    */
-  list(query: AddressListParams | null | undefined = {}, options?: RequestOptions): APIPromise<AddressListResponse> {
+  list(
+    query: AddressListParams | null | undefined = {},
+    options?: RequestOptions,
+  ): APIPromise<AddressListResponse> {
     return this._client.get('/v1/addresses', { query, ...options });
   }
 }
@@ -74,7 +77,7 @@ export interface AddressRetrieveResponse {
   region?: string | null;
 }
 
-export type AddressListResponse = Array<AddressListResponse.AddressListResponseItem>
+export type AddressListResponse = Array<AddressListResponse.AddressListResponseItem>;
 
 export namespace AddressListResponse {
   export interface AddressListResponseItem {
@@ -122,6 +125,6 @@ export declare namespace Addresses {
   export {
     type AddressRetrieveResponse as AddressRetrieveResponse,
     type AddressListResponse as AddressListResponse,
-    type AddressListParams as AddressListParams
+    type AddressListParams as AddressListParams,
   };
 }
