@@ -29,7 +29,7 @@ export class Reverse extends APIResource {
   }
 }
 
-export type ReverseGeocodeResponse = Array<ReverseGeocodeResponse.ReverseGeocodeResponseItem>
+export type ReverseGeocodeResponse = Array<ReverseGeocodeResponse.ReverseGeocodeResponseItem>;
 
 export namespace ReverseGeocodeResponse {
   export interface ReverseGeocodeResponseItem {
@@ -68,6 +68,6 @@ export interface ReverseGeocodeParams {
 export declare namespace Reverse {
   export {
     type ReverseGeocodeResponse as ReverseGeocodeResponse,
-    type ReverseGeocodeParams as ReverseGeocodeParams
+    type ReverseGeocodeParams as ReverseGeocodeParams,
   };
 }
