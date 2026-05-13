@@ -60,21 +60,21 @@ export interface AddressRetrieveResponse {
 
   fullAddressNumber: string;
 
-  fullAddressRoad: string;
-
   latitude: number;
 
   longitude: number;
-
-  postcode: string;
-
-  region: string;
 
   suburb: string;
 
   territorialAuthority: string;
 
   townCity: string;
+
+  fullAddressRoad?: string | null;
+
+  postcode?: string | null;
+
+  region?: string | null;
 }
 
 export type AddressListResponse = Array<AddressListResponse.AddressListResponseItem>;
@@ -87,21 +87,21 @@ export namespace AddressListResponse {
 
     fullAddressNumber: string;
 
-    fullAddressRoad: string;
-
     latitude: number;
 
     longitude: number;
-
-    postcode: string;
-
-    region: string;
 
     suburb: string;
 
     territorialAuthority: string;
 
     townCity: string;
+
+    fullAddressRoad?: string | null;
+
+    postcode?: string | null;
+
+    region?: string | null;
   }
 }
 

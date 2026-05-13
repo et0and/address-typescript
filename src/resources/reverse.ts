@@ -39,21 +39,21 @@ export namespace ReverseGeocodeResponse {
 
     fullAddressNumber: string;
 
-    fullAddressRoad: string;
-
     latitude: number;
 
     longitude: number;
-
-    postcode: string;
-
-    region: string;
 
     suburb: string;
 
     territorialAuthority: string;
 
     townCity: string;
+
+    fullAddressRoad?: string | null;
+
+    postcode?: string | null;
+
+    region?: string | null;
   }
 }
 

@@ -5,7 +5,7 @@ import { APIPromise } from '../core/api-promise';
 import { RequestOptions } from '../internal/request-options';
 
 /**
- * Health, API information, and API key onboarding endpoints that do not require authentication.
+ * Health and API key onboarding endpoints that do not require authentication.
  */
 export class Challenge extends APIResource {
   /**
